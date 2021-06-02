@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "curso-kubernetes-314521",
+  "private_key_id": "25162d43446b769342a41ee3bbcc900fe4a47a51",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCLGbwzQaXQc30K\nR9wUM//S4PEifq+U6dqxds8VIlw0MOcKk3xYnP6TZAAPsfugVZS/MFQVFHOlDzUR\ntJYGG22vfWtjdpA6I2LC3Yh8fdE5syCl9slmPy3omNjRxuBiwL573Prduqma5IUU\ntGsds2j2GeR6pB6WEQiqK8RBIN+rzY6cMS56NGsUMHHJK0k+0hxvQqa0X2XwEVuD\nJtxOD9Wu803zItL9TaJ+gHiu1n6ucf47WY9Hnnav5JAvvn1O7mqvNjKODm8uZUGX\nodf2lF0exI2bMSjJV1VYrFvAeheuFnVdMAB4mIbPJ7d5NK9FznAFcxrIwc+kpH5g\nASC4yfZHAgMBAAECggEAMgpdjpDwzlclpgOo9CmqwBnFFbQ+hRNF5e7IW6GDSxFG\npKLfKl+8I5jnfr34ODthahBAR18WpUwdutNc3zCR2n6DmgIGq6ucNV8N4T8//AJp\nXds0o9BZuyH1ai4h/dS6EgQyyX6D0mGgUI0BNeubeGFjNQ2CpVjWZaWeEhH59StT\ncenF8V8t/sBEloczrCEZ4/ouJHDDRLFKthT+8Zu3bHyrpY5fR7mDS7Z1d4j23P1/\n3CVX8lPoZkClsPAul97Ws+fTwpLDsVC4Y8Imynjc4dxEn5kLYIV9dLOykB6/n0T9\nTJ50+MrNLtBukc+Q4lCHeeXVUsVPg5IBC64CGLN6TQKBgQDBFD3zsunCYV/AsCv1\ngVKGR1NoM7qBxQMVkfEu7IcQetJGfJ6Bg4U85UN0bIp5aH4B6zBgVIMvkjOY8woF\nTgW+QKny8wncU5iZIfZHhCkj8IwUxkdCL3q6XZXlUNw7pHhnwZzDbaGK+BvuM+Fl\nG4a6XX1OCLn5vT3hgRL6FzyMYwKBgQC4bkuKniX4Z4Vm/JrzemLI5rl012cYN8D8\nLvEu2pdkAO0C20luIpOsoCFt42bfy+LJqGBt5KZ9PL7Ts9fgktQXRkj5aGxp8JqS\ncdphD2PGswrxhdeIx4h3BCGKZqIq6W6pV127vALmphtIQA1cPtdYVeJyrfz2naEq\nLESJSt65zQKBgGoYYWKEMYcqUp9jLwScp2g50U80/YtJYsR7iXgraJxZoSoyWDb6\nukAYCtTyv7SvAm6zecW1KtD9GXU2N49qrCU7CygA/K4hEX0z+EycBq9FAvR3b7ii\ntmGqAzAbGql7Wt5IuYd5uobOhyqBP517XrERpkU27lqY7mP3tSHPmunZAoGBAIa2\nmZsQ1W9SPlDxZkU+OfXBAenkhLtdzirmJukwZbB4NKcHgeVegDtxY7mehsAlbuwZ\nfwYGI84KluCP1rmExkKR5i+3JKllQ6KAYyDOWvUCRpYQS1TvWjCE5fLv8Lgjdd9f\nn2nHdN8AqaDmmFuu0yEE6rkVeVax4MyrNQyLkZBpAoGAfALSK2RWqBhIgDQpYPMB\nk6NOkjQ8dDm9xEV5Uada/mlN7onU3tJksZDbb5YRTbhhVug4kk5Uu+VRbVB9odKR\nJiXf3DDD5943P5NSe+NVkTvKCMZjjWwEMNVdOqUc/TL9g8vjIGRwrAC7N+b3rI04\nYtlY+59r5D2IChhWtd/Izfc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "postgredb@curso-kubernetes-314521.iam.gserviceaccount.com",
+  "client_id": "106305331993753812320",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/postgredb%40curso-kubernetes-314521.iam.gserviceaccount.com"
+}

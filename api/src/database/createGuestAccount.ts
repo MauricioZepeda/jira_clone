@@ -8,17 +8,17 @@ const seedUsers = (): Promise<User[]> => {
     createEntity(User, {
       email: 'rick@jira.guest',
       name: 'Pickle Rick',
-      avatarUrl: 'https://i.ibb.co/7JM1P2r/picke-rick.jpg',
+      avatarUrl: 'https://images.squarespace-cdn.com/content/v1/5616ac17e4b018d366f57f53/1616921622861-UI0E1KHQDWVD32JRPZL0/ke17ZwdGBToddI8pDm48kHhlTY0to_qtyxq77jLiHTtZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7T-j82ScS_xjTqFYGqFrT72qZ_E0ELtHpOZiWcSG1QwIMeEVreGuQ8F95X5MZTW1Jw/pickle+rick+soundboard',
     }),
     createEntity(User, {
       email: 'yoda@jira.guest',
       name: 'Baby Yoda',
-      avatarUrl: 'https://i.ibb.co/6n0hLML/baby-yoda.jpg',
+      avatarUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy5V67H8VlEDXe-DOvEA7FY9Eb1osMB2XBIXlMcqXNYcNrSgom1z50QA2UkkuthVqys9I&usqp=CAU',
     }),
     createEntity(User, {
       email: 'gaben@jira.guest',
       name: 'Lord Gaben',
-      avatarUrl: 'https://i.ibb.co/6RJ5hq6/gaben.jpg',
+      avatarUrl: 'https://image.flaticon.com/icons/png/512/1674/1674291.png',
     }),
   ];
   return Promise.all(users);
@@ -191,6 +191,7 @@ const seedComments = (issues: Issue[], users: User[]): Promise<Comment[]> => {
 };
 
 const createGuestAccount = async (): Promise<User> => {
+  console.log("createGuestAccount")
   const users = await seedUsers();
   const project = await seedProject(users);
   const issues = await seedIssues(project);

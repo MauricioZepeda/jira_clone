@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jira-back-deployment   
+  labels:
+    app: jira-back
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jira-back
+  template:
+    metadata: 
+      labels:
+        app: jira-back
+    spec:
+      containers:
+      - name: jira-back
+        image: gcr.io/curso-kubernetes-314521/jira-back
+        env:
+          - name: DB_HOST
+            valueFrom:
+              secretKeyRef:
+                name: cloudsql-db-credentials
+                key: DB_HOST 
+          - name: DB_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: cloudsql-db-credentials
+                key: DB_USERNAME 
+          - name: DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: cloudsql-db-credentials
+                key: DB_PASSWORD 
+          - name: DB_DATABASE
+            valueFrom:
+              secretKeyRef:
+                name: cloudsql-db-credentials
+                key: DB_DATABASE   
+          - name: DB_HOST
+            valueFrom:
+              secretKeyRef:
+                name: cloudsql-db-credentials
+                key: DB_HOST 
+          - name: JWT_SECRET
+            valueFrom:
+              secretKeyRef:
+                name: cloudsql-db-credentials
+                key: JWT_SECRET 
+        ports:
+        - containerPort: 3000 
+      - name: cloudsql-proxy
+        image: gcr.io/cloudsql-docker/gce-proxy:1.11
+        command: ["/cloud_sql_proxy",
+                  "-instances=curso-kubernetes-314521:us-central1:jiraclone=tcp:5432",
+                  "-credential_file=/secrets/cloudsql/credentials.json"]
+        volumeMounts:
+          - name: cloudsql-instance-credentials
+            mountPath: /secrets/cloudsql
+            readOnly: true
+      volumes:
+      - name: cloudsql-instance-credentials
+        secret:
+          secretName: cloudsql-instance-credentials            

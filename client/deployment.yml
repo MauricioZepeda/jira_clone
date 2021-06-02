@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jira-front-deployment  
+  labels:
+    app: jira-front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jira-front
+  template:
+    metadata: 
+      labels:
+        app: jira-front
+    spec:
+      containers:
+      - name: jira-front
+        image: gcr.io/curso-kubernetes-314521/jira-front
+        ports:
+        - containerPort: 8080 
