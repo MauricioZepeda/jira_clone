@@ -2,16 +2,17 @@
 
 Clon de jira dockerizado y levantado en kubernetes en GCP
 
-Antes de empezar, debe tener instalado el [SDK de Google Cloud](https://cloud.google.com/sdk/docs/install).
+Ver Demo: [Clon de Jira](http://34.136.210.254/)
 
-Demo: [Clon de Jira](http://34.136.210.254/)
+
+Antes de empezar, debe tener instalado el [SDK de Google Cloud](https://cloud.google.com/sdk/docs/install).
 
 ## Crear y subir las imagenes
 
 La primero que hay que hacer es clonar el proyecto
 
 ```sh
-git clone sdsd
+git clone https://github.com/MauricioZepeda/jira_clone
 ```
 
 Luego entramos a la carpeta del proyecto
